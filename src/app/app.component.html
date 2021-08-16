@@ -1,0 +1,10 @@
+<div>
+  <div>
+    <input #tagFilter type="text">
+  </div>
+  <div>
+    <select name="sortSelect" [(ngModel)]="sortingSelect">
+      <option *ngFor="let option of sortingOptions" [ngValue]="option.value">{{option.name}}</option>
+    </select>
+  </div>
+</div>
